@@ -12,6 +12,7 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	print("Character is ready")
 
+
 func _unhandled_input(e: InputEvent) -> void:
 	if e is InputEventMouseMotion:
 		rotate_y(-e.relative.x * sens)
