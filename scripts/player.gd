@@ -6,11 +6,12 @@ extends CharacterBody3D
 
 var pitch := 0.0
 var sens := 0.05
+var id
 
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	print("Character is ready")
+	print("Character" + id + "is ready")
 
 
 func _unhandled_input(e: InputEvent) -> void:

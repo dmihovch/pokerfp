@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://brlnylarclhbn"]
+[gd_scene load_steps=4 format=3 uid="uid://brlnylarclhbn"]
 
+[ext_resource type="Script" uid="uid://cpxvf4rgt7o6h" path="res://scripts/table.gd" id="1_so1t7"]
 [ext_resource type="Script" uid="uid://ctm4j5ecepb4t" path="res://scripts/spawn.gd" id="1_xa0as"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_g2b0j"]
 size = Vector3(1, 0.1, 1)
 
 [node name="TableScene" type="Node3D"]
+script = ExtResource("1_so1t7")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("BoxMesh_g2b0j")
