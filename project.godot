@@ -14,6 +14,10 @@ config/name="Poker"
 run/main_scene="uid://vhq8rf67icf7"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot-vim/plugin.cfg")
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"

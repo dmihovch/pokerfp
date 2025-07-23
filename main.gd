@@ -2,8 +2,7 @@ extends Node
 
 
 func _ready():
-	print("hello")
+	print("main _ready() called")	
 	var table = preload("res://scenes/Table.tscn")
-	print("preloaded")
 	add_child(table.instantiate())
-	print("instantiated")
+	print("instantiated table and added to root")
