@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://brlnylarclhbn"]
+
+[ext_resource type="Script" uid="uid://cpxvf4rgt7o6h" path="res://table/table.gd" id="1_r5hyl"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_g2b0j"]
+size = Vector3(1, 0.1, 1)
+
+[node name="TableScene" type="Node3D"]
+script = ExtResource("1_r5hyl")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_g2b0j")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-1, -8.74228e-08, 0, -5.61495e-10, 0.00642276, 0.999979, -8.7421e-08, 0.999979, -0.00642276, 0, 5, 0)
